@@ -314,17 +314,24 @@ nav a:hover { color: var(--cyan); background: rgba(0,180,216,0.1); }
 .doc-item .sublabel { font-size: 0.76rem; color: var(--muted); margin-top: 2px; }
 
 /* ── TEAM ── */
-.team-grid-new {
+/* .team-grid-new {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 20px;
+} */
+ .team-grid-new {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
 }
 .team-card {
   background: var(--white); border-radius: var(--radius); padding: 28px 22px;
   text-align: center; border: 1px solid var(--border);
+  grid-column: span 3;
   box-shadow: var(--shadow-sm); transition: all 0.28s ease;
 }
 .team-card:hover { box-shadow: var(--shadow-md); transform: translateY(-5px); }
 .team-card.supervisor {
   background: linear-gradient(145deg, #f5f8ff, #eef3fc);
+  grid-column: span 4;
   border-color: rgba(0,87,184,0.2);
 }
 .avatar-wrap {
@@ -612,10 +619,13 @@ footer strong { color: var(--cyan); font-weight: 600; }
     <h2>System <em>Overview</em></h2>
   </div>
   <div class="system-placeholder">
-    <svg width="64" height="64" fill="none" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="3" stroke="#0057b8" stroke-width="1.2"/><path d="M7 7h10M7 12h6M7 17h4" stroke="#0057b8" stroke-width="1.2" stroke-linecap="round"/></svg>
-    <p style="font-weight:600;color:#5a6880">System Architecture Diagram</p>
-    <p style="font-size:0.82rem;color:#8a9ab5">Replace with your diagram image</p>
-  </div>
+  <iframe 
+    src="https://drive.google.com/file/d/1UeJFH0waLI4GcxMA7TxH1qsOQqeUcC2U/preview"
+    width="100%" 
+    height="500" 
+    style="border:none; border-radius:10px;">
+  </iframe>
+</div>
 
   <!-- TECHNOLOGIES -->
   <div class="section-heading" style="margin-top:60px">
@@ -840,25 +850,25 @@ footer strong { color: var(--cyan); font-weight: 600; }
     <h2>Project <em>Documents</em></h2>
   </div>
   <div class="docs-grid">
-    <a class="doc-item" href="#">
+    <a class="doc-item" href="https://drive.google.com/drive/folders/1P-6UV6Dws5dlxwmXWL-ennTx7R4seIUP?usp=sharing">
       <div class="doc-icon blue">
         <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M6 2h7l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6"/><path d="M14 2v5h5M9 13h6M9 17h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
       </div>
       <div><div class="label">Project Charter</div><div class="sublabel">PDF Document</div></div>
     </a>
-    <a class="doc-item" href="#">
+    <a class="doc-item" href="https://drive.google.com/drive/folders/11Lr3F9AZ_DwQSREgIECgbhUmWWA85WGi?usp=sharing">
       <div class="doc-icon blue">
         <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M6 2h7l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6"/><path d="M14 2v5h5M9 13h6M9 17h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
       </div>
       <div><div class="label">Proposal Document</div><div class="sublabel">PDF Document</div></div>
     </a>
-    <a class="doc-item" href="#">
+    <a class="doc-item" href="https://drive.google.com/drive/folders/1eCWg5IiONAgQIVO_21kNHad01--axMvw?usp=sharing">
       <div class="doc-icon blue">
         <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M6 2h7l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6"/><path d="M14 2v5h5M9 13h6M9 17h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
       </div>
       <div><div class="label">Checklist Documents</div><div class="sublabel">PDF Document</div></div>
     </a>
-    <a class="doc-item" href="#">
+    <a class="doc-item" href="https://drive.google.com/drive/folders/1GumUJd1A8TSvXVEi0iVt0uGKskSZ2vJA?usp=sharing">
       <div class="doc-icon blue">
         <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M6 2h7l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6"/><path d="M14 2v5h5M9 13h6M9 17h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
       </div>
@@ -875,25 +885,25 @@ footer strong { color: var(--cyan); font-weight: 600; }
       <h2>Slide <em>Decks</em></h2>
     </div>
     <div class="docs-grid">
-      <a class="doc-item" href="#">
+      <a class="doc-item" href="https://drive.google.com/drive/folders/1hpp3c3KXPP9Zt58NOwsXRmR7KSyz0KuY?usp=sharing">
         <div class="doc-icon orange">
           <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 9l6 3-6 3V9z" fill="currentColor"/></svg>
         </div>
         <div><div class="label">Proposal Presentation</div><div class="sublabel">PPTX Slides</div></div>
       </a>
-      <a class="doc-item" href="#">
+      <a class="doc-item" href="https://drive.google.com/drive/folders/1hpp3c3KXPP9Zt58NOwsXRmR7KSyz0KuY?usp=sharing">
         <div class="doc-icon orange">
           <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 9l6 3-6 3V9z" fill="currentColor"/></svg>
         </div>
         <div><div class="label">Progress Presentation I</div><div class="sublabel">PPTX Slides</div></div>
       </a>
-      <a class="doc-item" href="#">
+      <a class="doc-item" href="https://drive.google.com/drive/folders/1hpp3c3KXPP9Zt58NOwsXRmR7KSyz0KuY?usp=sharing">
         <div class="doc-icon orange">
           <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 9l6 3-6 3V9z" fill="currentColor"/></svg>
         </div>
         <div><div class="label">Progress Presentation II</div><div class="sublabel">PPTX Slides</div></div>
       </a>
-      <a class="doc-item" href="#">
+      <a class="doc-item" href="https://drive.google.com/drive/folders/1hpp3c3KXPP9Zt58NOwsXRmR7KSyz0KuY?usp=sharing">
         <div class="doc-icon orange">
           <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 9l6 3-6 3V9z" fill="currentColor"/></svg>
         </div>
@@ -951,14 +961,14 @@ footer strong { color: var(--cyan); font-weight: 600; }
 
     <div class="team-card">
       <div class="avatar-wrap">
-        <div class="avatar-initials">GS</div>
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQFKsFSC_1FYJw/profile-displayphoto-crop_800_800/B56Z2yyIkiG0AI-/0/1776820989369?e=1778716800&v=beta&t=-An0JV8W-59lga_TWc05KuUP3qNgimHSj7AmhPzez9M" alt="Ravishan G S">
       </div>
       <span class="role-tag member">Group Member</span>
       <h4>Ravishan G. S</h4>
       <p class="dept">Sri Lanka Institute of Information Technology<br>Data Science</p>
       <div class="team-links">
         <a class="team-link" href="mailto:sanjukaedu@gmail.com">Email</a>
-        <a class="team-link" href="#">LinkedIn</a>
+        <a class="team-link" href="https://www.linkedin.com/in/sanjukaravishan/" target="_blank">LinkedIn</a>
       </div>
     </div>
 
@@ -970,7 +980,7 @@ footer strong { color: var(--cyan); font-weight: 600; }
       <h4>Prof. Nathali Silva</h4>
       <p class="dept">Sri Lanka Institute of Information Technology</p>
       <div class="team-links">
-        <a class="team-link" href="#">Email</a>
+        <a class="team-link" href="mailto:nathali.s@sliit.lk">Email</a>
         <a class="team-link" href="https://www.linkedin.com/in/bhagya-nathali-silva-8ab73524/" target="_blank">LinkedIn</a>
       </div>
     </div>
@@ -983,7 +993,7 @@ footer strong { color: var(--cyan); font-weight: 600; }
       <h4>MS. Wishalya Thisera</h4>
       <p class="dept">Sri Lanka Institute of Information Technology</p>
       <div class="team-links">
-        <a class="team-link" href="#">Email</a>
+        <a class="team-link" href="mailto:wishalya.tissera@slit.lk">Email</a>
         <a class="team-link" href="https://www.linkedin.com/in/wishalya-tissera/" target="_blank">LinkedIn</a>
       </div>
     </div>
@@ -996,7 +1006,7 @@ footer strong { color: var(--cyan); font-weight: 600; }
       <h4>MS. Ganga Palakatiya</h4>
       <p class="dept">Director<br>Board of Investment, Sri Lanka</p>
       <div class="team-links">
-        <a class="team-link" href="#">Email</a>
+        <a class="team-link" href="mailto:gangap@boi.lk">Email</a>
         <a class="team-link" href="https://www.linkedin.com/in/ganga-palakaitya-b820511b3/" target="_blank">LinkedIn</a>
       </div>
     </div>
@@ -1046,7 +1056,7 @@ footer strong { color: var(--cyan); font-weight: 600; }
 </div>
 
 <footer>
-  <p>© 2026 <strong>BOI AI Support System</strong> · SLIIT Research Project</p>
+  <p>© 2026 <strong>AI-DRIVEN DECISION SUPPORT SYSTEM</strong> · SLIIT Research Project</p>
   <p style="margin-top:6px;font-size:0.78rem">In collaboration with the Board of Investment of Sri Lanka</p>
 </footer>
 
