@@ -318,20 +318,23 @@ nav a:hover { color: var(--cyan); background: rgba(0,180,216,0.1); }
   display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 20px;
 } */
  .team-grid-new {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 .team-card {
   background: var(--white); border-radius: var(--radius); padding: 28px 22px;
   text-align: center; border: 1px solid var(--border);
-  grid-column: span 3;
+  flex: 1 1 230px;
+  max-width: 260px;
   box-shadow: var(--shadow-sm); transition: all 0.28s ease;
 }
 .team-card:hover { box-shadow: var(--shadow-md); transform: translateY(-5px); }
 .team-card.supervisor {
   background: linear-gradient(145deg, #f5f8ff, #eef3fc);
-  grid-column: span 4;
+  flex-basis: 320px;
+  max-width: 320px;
   border-color: rgba(0,87,184,0.2);
 }
 .avatar-wrap {
@@ -1003,6 +1006,19 @@ footer strong { color: var(--cyan); font-weight: 600; }
       <div class="team-links">
         <a class="team-link" href="mailto:wishalya.tissera@slit.lk">Email</a>
         <a class="team-link" href="https://www.linkedin.com/in/wishalya-tissera/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="team-card supervisor">
+      <div class="avatar-wrap">
+        <img src="https://webasset.sliit.lk/web/jennyk_20260426_1777220094.jpeg" alt="Ms. Jenny Krishara">
+      </div>
+      <span class="role-tag supervisor-tag">Co-Supervisor</span>
+      <h4>Ms. Jenny Krishara</h4>
+      <p class="dept">Sri Lanka Institute of Information Technology</p>
+      <div class="team-links">
+        <a class="team-link" href="mailto:jenny.k@sliit.lk">Email</a>
+        <a class="team-link" href="https://www.linkedin.com/in/jenny-krishara-1a09a0111/" target="_blank">LinkedIn</a>
       </div>
     </div>
 
